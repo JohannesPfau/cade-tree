@@ -1,0 +1,1340 @@
+{
+  "id": "cade_multirun_campaigns_0",
+  "actors": [
+    {
+      "id": "1f52fae9-9d80-4998-b9c4-ea030b075bb1",
+      "ip_address": "000.0.0.0",
+      "latitude": 0,
+      "longitude": 0,
+      "username": "Data_Actor"
+    }
+  ],
+  "metadata": {
+    "dimensions": {
+      "x": {
+        "min": 0,
+        "max": 1000
+      },
+      "y": {
+        "min": 0,
+        "max": 1000
+      }
+    }
+  },
+  "nodes": [
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "2c364e03-512d-46e1-a76d-75a10180877d",
+      "label": "Run_All_Campaigns_1_MentalAction",
+      "parent": "a2fd8a85-8020-4f59-b415-cfc92a156ab2",
+      "type": "ABTMentalAction",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 12,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "afdfffe4-3647-46be-8a3d-9e8e6fe14119",
+      "label": "Run_Campaign_1_MentalAction",
+      "parent": "d51cdaba-e445-4446-942a-7cc8e2e877a3",
+      "type": "ABTMentalAction",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 10,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "d6e4e81c-5393-4687-bd6f-ac8cb530bf51",
+      "label": "Pick_Actor_1_MentalAction",
+      "parent": "7166c21a-1ce5-4731-9a9d-1ca4f3329a06",
+      "type": "ABTMentalAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "c6a1c879-506c-46e9-90b5-c0f1e8ef0ea8",
+      "label": "Pick_Source_3_MentalAction",
+      "parent": "508d0424-171a-40a8-970d-e06c1d74d8ed",
+      "type": "ABTMentalAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "6316f7cf-b7f3-4c94-b9c4-a0868ff5b2de",
+      "label": "Data_Actor",
+      "parent": "508d0424-171a-40a8-970d-e06c1d74d8ed",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "c6a1c879-506c-46e9-90b5-c0f1e8ef0ea8",
+        "6316f7cf-b7f3-4c94-b9c4-a0868ff5b2de"
+      ],
+      "id": "508d0424-171a-40a8-970d-e06c1d74d8ed",
+      "label": "Pick_Source_3",
+      "parent": "80ad97ba-c50f-402d-be75-6b481f9226e9",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "dbdd56e2-8bce-4acf-899a-ce3427d6ba23",
+      "label": "Pick_Source_1_MentalAction",
+      "parent": "40fb3c95-d843-4aba-b3c7-25510276899e",
+      "type": "ABTMentalAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "a0dad68f-da6f-4f20-9433-365277a3dded",
+      "label": "Data_Actor",
+      "parent": "40fb3c95-d843-4aba-b3c7-25510276899e",
+      "type": "ABTAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "dbdd56e2-8bce-4acf-899a-ce3427d6ba23",
+        "a0dad68f-da6f-4f20-9433-365277a3dded"
+      ],
+      "id": "40fb3c95-d843-4aba-b3c7-25510276899e",
+      "label": "Pick_Source_1",
+      "parent": "80ad97ba-c50f-402d-be75-6b481f9226e9",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "27ca75fc-639f-423c-88dd-e6a2acc68915",
+      "label": "Pick_Source_2_MentalAction",
+      "parent": "6e4305e8-0f9f-41cf-bd7d-9cd0c5da9c38",
+      "type": "ABTMentalAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "0e41c46c-3c76-4b28-924e-ab7ba4281772",
+      "label": "Data_Actor",
+      "parent": "6e4305e8-0f9f-41cf-bd7d-9cd0c5da9c38",
+      "type": "ABTAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "27ca75fc-639f-423c-88dd-e6a2acc68915",
+        "0e41c46c-3c76-4b28-924e-ab7ba4281772"
+      ],
+      "id": "6e4305e8-0f9f-41cf-bd7d-9cd0c5da9c38",
+      "label": "Pick_Source_2",
+      "parent": "80ad97ba-c50f-402d-be75-6b481f9226e9",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "a68c366b-6c5b-4b57-8582-9defb2b629f1",
+      "label": "Pick_Source_4_MentalAction",
+      "parent": "42dd5c6f-c118-4d4d-b972-43113ed70402",
+      "type": "ABTMentalAction",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "a585e220-5f40-41ec-88d6-7f025efffbf4",
+      "label": "Data_Actor",
+      "parent": "42dd5c6f-c118-4d4d-b972-43113ed70402",
+      "type": "ABTAction",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "a68c366b-6c5b-4b57-8582-9defb2b629f1",
+        "a585e220-5f40-41ec-88d6-7f025efffbf4"
+      ],
+      "id": "42dd5c6f-c118-4d4d-b972-43113ed70402",
+      "label": "Pick_Source_4",
+      "parent": "80ad97ba-c50f-402d-be75-6b481f9226e9",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "508d0424-171a-40a8-970d-e06c1d74d8ed",
+        "40fb3c95-d843-4aba-b3c7-25510276899e",
+        "6e4305e8-0f9f-41cf-bd7d-9cd0c5da9c38",
+        "42dd5c6f-c118-4d4d-b972-43113ed70402"
+      ],
+      "id": "80ad97ba-c50f-402d-be75-6b481f9226e9",
+      "label": "Pick_Source",
+      "parent": "7166c21a-1ce5-4731-9a9d-1ca4f3329a06",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "c3ad1e09-fc13-48c8-a398-ad08e88a55b6",
+      "label": "testActForWeb",
+      "parent": "7166c21a-1ce5-4731-9a9d-1ca4f3329a06",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "d6e4e81c-5393-4687-bd6f-ac8cb530bf51",
+        "80ad97ba-c50f-402d-be75-6b481f9226e9",
+        "c3ad1e09-fc13-48c8-a398-ad08e88a55b6"
+      ],
+      "id": "7166c21a-1ce5-4731-9a9d-1ca4f3329a06",
+      "label": "Pick_Actor_1",
+      "parent": "b3ffa4dd-c522-410c-85f9-ab4d0a3fa8d1",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 7,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "7166c21a-1ce5-4731-9a9d-1ca4f3329a06"
+      ],
+      "id": "b3ffa4dd-c522-410c-85f9-ab4d0a3fa8d1",
+      "label": "Pick_Actor",
+      "parent": "1ca4a7fd-ab11-4c7d-8fe1-132e56ebbce2",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 8,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "02ac6b70-8810-44d4-9794-0ac32c2b87b2",
+      "label": "Data",
+      "parent": "34d088cc-3494-499c-b489-6cfb6695db17",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "02ac6b70-8810-44d4-9794-0ac32c2b87b2"
+      ],
+      "id": "34d088cc-3494-499c-b489-6cfb6695db17",
+      "label": "Facebook_User_CreateAccount_1",
+      "parent": "28682536-469e-4a91-af7b-cef70cb47c76",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "34d088cc-3494-499c-b489-6cfb6695db17"
+      ],
+      "id": "28682536-469e-4a91-af7b-cef70cb47c76",
+      "label": "Facebook_User_CreateAccount",
+      "parent": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "87ef7d36-037f-42c9-abe1-1aca803f0608",
+      "label": "Data",
+      "parent": "460db293-4fcf-4978-a66c-07951be45077",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "87ef7d36-037f-42c9-abe1-1aca803f0608"
+      ],
+      "id": "460db293-4fcf-4978-a66c-07951be45077",
+      "label": "Facebook_User_FollowExistingUsers_1",
+      "parent": "9d6ba128-6a8e-4041-85ec-fa533ed02c9a",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "460db293-4fcf-4978-a66c-07951be45077"
+      ],
+      "id": "9d6ba128-6a8e-4041-85ec-fa533ed02c9a",
+      "label": "Facebook_User_FollowExistingUsers",
+      "parent": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "6817f35f-f084-4831-bb4e-bb2057b26923",
+      "label": "Data",
+      "parent": "f059a24c-9d7e-4328-8a24-71cf319f4bfd",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "6817f35f-f084-4831-bb4e-bb2057b26923"
+      ],
+      "id": "f059a24c-9d7e-4328-8a24-71cf319f4bfd",
+      "label": "Facebook_User_DismayFollowers_1",
+      "parent": "04e8d3aa-b1a1-433e-9235-d25ed3749a71",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "f059a24c-9d7e-4328-8a24-71cf319f4bfd"
+      ],
+      "id": "04e8d3aa-b1a1-433e-9235-d25ed3749a71",
+      "label": "Facebook_User_DismayFollowers",
+      "parent": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "4f9e2c86-5a7b-4c0d-aff7-e641dcc24ac5",
+      "label": "Data",
+      "parent": "889ad707-30c8-4bcd-8753-ff2d7fbe177c",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "4f9e2c86-5a7b-4c0d-aff7-e641dcc24ac5"
+      ],
+      "id": "889ad707-30c8-4bcd-8753-ff2d7fbe177c",
+      "label": "Facebook_User_EngageFollowersAttention_1",
+      "parent": "e7a178fc-7ad4-46d3-88e9-50b4eba0a6a3",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "889ad707-30c8-4bcd-8753-ff2d7fbe177c"
+      ],
+      "id": "e7a178fc-7ad4-46d3-88e9-50b4eba0a6a3",
+      "label": "Facebook_User_EngageFollowersAttention",
+      "parent": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "108dbb48-1443-4bb5-994b-64be2ba4dddf",
+      "label": "Data",
+      "parent": "d30a9b50-0b22-4aee-bfd8-dd99ca8c56ec",
+      "type": "ABTAction",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "108dbb48-1443-4bb5-994b-64be2ba4dddf"
+      ],
+      "id": "d30a9b50-0b22-4aee-bfd8-dd99ca8c56ec",
+      "label": "Facebook_User_NukeFollowers_1",
+      "parent": "667a1841-505c-4264-a5dc-170eedbaee75",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "d30a9b50-0b22-4aee-bfd8-dd99ca8c56ec"
+      ],
+      "id": "667a1841-505c-4264-a5dc-170eedbaee75",
+      "label": "Facebook_User_NukeFollowers",
+      "parent": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "28682536-469e-4a91-af7b-cef70cb47c76",
+        "9d6ba128-6a8e-4041-85ec-fa533ed02c9a",
+        "04e8d3aa-b1a1-433e-9235-d25ed3749a71",
+        "e7a178fc-7ad4-46d3-88e9-50b4eba0a6a3",
+        "667a1841-505c-4264-a5dc-170eedbaee75"
+      ],
+      "id": "c187ceeb-215a-4ef5-8618-abdb56bd4b9f",
+      "label": "NeoNazi_FacebookUser_1",
+      "parent": "7ab2b2aa-de71-49b0-b743-b64ebc0353ac",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "c187ceeb-215a-4ef5-8618-abdb56bd4b9f"
+      ],
+      "id": "7ab2b2aa-de71-49b0-b743-b64ebc0353ac",
+      "label": "NeoNazi_FacebookUser",
+      "parent": "07cf0d6d-5a54-432d-b4bb-d5d0cf3e2478",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "7ab2b2aa-de71-49b0-b743-b64ebc0353ac"
+      ],
+      "id": "07cf0d6d-5a54-432d-b4bb-d5d0cf3e2478",
+      "label": "NeoNazi_SaviorNarrative_1",
+      "parent": "58df591f-f282-4eff-8456-d7c417a6e07a",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "07cf0d6d-5a54-432d-b4bb-d5d0cf3e2478"
+      ],
+      "id": "58df591f-f282-4eff-8456-d7c417a6e07a",
+      "label": "NeoNazi_SaviorNarrative",
+      "parent": "bb247690-f0e2-476f-859c-a1c0d05ac071",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "58df591f-f282-4eff-8456-d7c417a6e07a"
+      ],
+      "id": "bb247690-f0e2-476f-859c-a1c0d05ac071",
+      "label": "Campaign_NeoNazi_1",
+      "parent": "17fb4e2f-10a1-4176-9cbd-fa42fac90c83",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 7,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "bb247690-f0e2-476f-859c-a1c0d05ac071"
+      ],
+      "id": "17fb4e2f-10a1-4176-9cbd-fa42fac90c83",
+      "label": "Campaign_NeoNazi",
+      "parent": "1ca4a7fd-ab11-4c7d-8fe1-132e56ebbce2",
+      "type": "ABTGoal",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 8,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "b3ffa4dd-c522-410c-85f9-ab4d0a3fa8d1",
+        "17fb4e2f-10a1-4176-9cbd-fa42fac90c83"
+      ],
+      "id": "1ca4a7fd-ab11-4c7d-8fe1-132e56ebbce2",
+      "label": "Start_Campaign_2",
+      "parent": "200baa83-b9b0-42d3-b79a-a9b35088130f",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.73333335,
+      "x": 0,
+      "y": 0,
+      "z": 9,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "395a6e28-57a4-48ea-943c-76957a4a829e",
+      "label": "Pick_Actor_1_MentalAction",
+      "parent": "a62747ae-96cc-4590-9154-c34f869de727",
+      "type": "ABTMentalAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "29ef5019-2fef-4a6e-b9ea-94680986997c",
+      "label": "Pick_Source_1_MentalAction",
+      "parent": "44f8a367-be20-42a3-a86c-d4e0d09a53d9",
+      "type": "ABTMentalAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "495c8b10-1d77-4dfe-9bfb-b95d1b035e22",
+      "label": "Data_Actor",
+      "parent": "44f8a367-be20-42a3-a86c-d4e0d09a53d9",
+      "type": "ABTAction",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "29ef5019-2fef-4a6e-b9ea-94680986997c",
+        "495c8b10-1d77-4dfe-9bfb-b95d1b035e22"
+      ],
+      "id": "44f8a367-be20-42a3-a86c-d4e0d09a53d9",
+      "label": "Pick_Source_1",
+      "parent": "5ab6ac87-87f5-43ee-9496-922bd85dd0d5",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.2,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "80fb89cb-fc60-4d60-9fde-95cd131aafe5",
+      "label": "Pick_Source_2_MentalAction",
+      "parent": "2b93d4ca-78ad-4e43-8ecd-1e14bf3b91e4",
+      "type": "ABTMentalAction",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "e5d306e7-6960-49ba-a669-34eff79bc185",
+      "label": "Data_Actor",
+      "parent": "2b93d4ca-78ad-4e43-8ecd-1e14bf3b91e4",
+      "type": "ABTAction",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "80fb89cb-fc60-4d60-9fde-95cd131aafe5",
+        "e5d306e7-6960-49ba-a669-34eff79bc185"
+      ],
+      "id": "2b93d4ca-78ad-4e43-8ecd-1e14bf3b91e4",
+      "label": "Pick_Source_2",
+      "parent": "5ab6ac87-87f5-43ee-9496-922bd85dd0d5",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.06666667,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "44f8a367-be20-42a3-a86c-d4e0d09a53d9",
+        "2b93d4ca-78ad-4e43-8ecd-1e14bf3b91e4"
+      ],
+      "id": "5ab6ac87-87f5-43ee-9496-922bd85dd0d5",
+      "label": "Pick_Source",
+      "parent": "a62747ae-96cc-4590-9154-c34f869de727",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "68a059b2-6110-49e2-96c4-76aa8f4d98e2",
+      "label": "testActForWeb",
+      "parent": "a62747ae-96cc-4590-9154-c34f869de727",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "395a6e28-57a4-48ea-943c-76957a4a829e",
+        "5ab6ac87-87f5-43ee-9496-922bd85dd0d5",
+        "68a059b2-6110-49e2-96c4-76aa8f4d98e2"
+      ],
+      "id": "a62747ae-96cc-4590-9154-c34f869de727",
+      "label": "Pick_Actor_1",
+      "parent": "6f9c3338-d6d2-4689-8f8f-5a54e77185aa",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 7,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "a62747ae-96cc-4590-9154-c34f869de727"
+      ],
+      "id": "6f9c3338-d6d2-4689-8f8f-5a54e77185aa",
+      "label": "Pick_Actor",
+      "parent": "9dbadad6-1ab0-4681-8ae3-4a93fcc7c874",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 8,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "34997a7b-e4a4-40af-8e91-2b443b41f6e5",
+      "label": "Data",
+      "parent": "14aa46dc-3810-4f3b-a480-191ca2f07f16",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "34997a7b-e4a4-40af-8e91-2b443b41f6e5"
+      ],
+      "id": "14aa46dc-3810-4f3b-a480-191ca2f07f16",
+      "label": "Facebook_User_CreateAccount_1",
+      "parent": "b90dba53-13ac-49a6-bb80-cec3651f6b98",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "14aa46dc-3810-4f3b-a480-191ca2f07f16"
+      ],
+      "id": "b90dba53-13ac-49a6-bb80-cec3651f6b98",
+      "label": "Facebook_User_CreateAccount",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "0a9eaf37-f894-41b8-820e-843aa6606fca",
+      "label": "Data",
+      "parent": "c84d44c4-b1c0-4266-8111-b3f804ee2fc3",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "0a9eaf37-f894-41b8-820e-843aa6606fca"
+      ],
+      "id": "c84d44c4-b1c0-4266-8111-b3f804ee2fc3",
+      "label": "Facebook_User_FollowExistingUsers_1",
+      "parent": "35071df2-0873-4b64-b9a4-19f891297d96",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "c84d44c4-b1c0-4266-8111-b3f804ee2fc3"
+      ],
+      "id": "35071df2-0873-4b64-b9a4-19f891297d96",
+      "label": "Facebook_User_FollowExistingUsers",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "2f3fbefc-b8ac-47b8-850c-c1a4fec48d12",
+      "label": "Data",
+      "parent": "1007809b-6e99-4b12-ba12-ea2c9392b063",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "2f3fbefc-b8ac-47b8-850c-c1a4fec48d12"
+      ],
+      "id": "1007809b-6e99-4b12-ba12-ea2c9392b063",
+      "label": "Facebook_User_NeutralizeFollowers_1",
+      "parent": "8c8a1825-3ea3-46f5-97b0-ef2a6d22e44c",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "1007809b-6e99-4b12-ba12-ea2c9392b063"
+      ],
+      "id": "8c8a1825-3ea3-46f5-97b0-ef2a6d22e44c",
+      "label": "Facebook_User_NeutralizeFollowers",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "54e928fc-daf4-48a0-a7ff-9b6eec1dc128",
+      "label": "Data",
+      "parent": "8f72877e-5f9b-4013-be19-7e62e21ce953",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "54e928fc-daf4-48a0-a7ff-9b6eec1dc128"
+      ],
+      "id": "8f72877e-5f9b-4013-be19-7e62e21ce953",
+      "label": "Facebook_User_EngageFollowersAttention_1",
+      "parent": "fb570681-fdef-4a54-a195-2ffd9d74dda5",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "8f72877e-5f9b-4013-be19-7e62e21ce953"
+      ],
+      "id": "fb570681-fdef-4a54-a195-2ffd9d74dda5",
+      "label": "Facebook_User_EngageFollowersAttention",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "36a3fb21-de84-497f-8b9b-0499357de760",
+      "label": "Data",
+      "parent": "c91aab24-a5fe-4f55-a479-9c5d46f2ecaa",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "36a3fb21-de84-497f-8b9b-0499357de760"
+      ],
+      "id": "c91aab24-a5fe-4f55-a479-9c5d46f2ecaa",
+      "label": "Facebook_User_BoostFollowers_1",
+      "parent": "54ddcf4d-a07c-4b0f-92ac-118cc8d3343f",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "c91aab24-a5fe-4f55-a479-9c5d46f2ecaa"
+      ],
+      "id": "54ddcf4d-a07c-4b0f-92ac-118cc8d3343f",
+      "label": "Facebook_User_BoostFollowers",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [],
+      "id": "26859bc7-b424-4d1f-8203-202d5c82687f",
+      "label": "Data",
+      "parent": "be51b56e-7ea7-40ab-85cc-7c55d663ba74",
+      "type": "ABTAction",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "26859bc7-b424-4d1f-8203-202d5c82687f"
+      ],
+      "id": "be51b56e-7ea7-40ab-85cc-7c55d663ba74",
+      "label": "Facebook_User_EngageFollowers_1",
+      "parent": "5326ba40-22c4-4a96-a9ee-cc0d7ff7189e",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "be51b56e-7ea7-40ab-85cc-7c55d663ba74"
+      ],
+      "id": "5326ba40-22c4-4a96-a9ee-cc0d7ff7189e",
+      "label": "Facebook_User_EngageFollowers",
+      "parent": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "b90dba53-13ac-49a6-bb80-cec3651f6b98",
+        "35071df2-0873-4b64-b9a4-19f891297d96",
+        "8c8a1825-3ea3-46f5-97b0-ef2a6d22e44c",
+        "fb570681-fdef-4a54-a195-2ffd9d74dda5",
+        "54ddcf4d-a07c-4b0f-92ac-118cc8d3343f",
+        "5326ba40-22c4-4a96-a9ee-cc0d7ff7189e"
+      ],
+      "id": "73f98a6e-88ac-4be9-ae94-d502d0f0c266",
+      "label": "Biolab_FacebookUser_1",
+      "parent": "cd18530f-5a3d-4868-8ec3-4481fc910c69",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "73f98a6e-88ac-4be9-ae94-d502d0f0c266"
+      ],
+      "id": "cd18530f-5a3d-4868-8ec3-4481fc910c69",
+      "label": "Biolab_FacebookUser",
+      "parent": "55ec39fa-7ecd-44c2-bb2a-d86429c01642",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "cd18530f-5a3d-4868-8ec3-4481fc910c69"
+      ],
+      "id": "55ec39fa-7ecd-44c2-bb2a-d86429c01642",
+      "label": "Campaign_Biolab_1",
+      "parent": "d1cb6f67-7281-42f4-9b58-3cb55c8a7e60",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 7,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "55ec39fa-7ecd-44c2-bb2a-d86429c01642"
+      ],
+      "id": "d1cb6f67-7281-42f4-9b58-3cb55c8a7e60",
+      "label": "Campaign_Biolab",
+      "parent": "9dbadad6-1ab0-4681-8ae3-4a93fcc7c874",
+      "type": "ABTGoal",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 8,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "6f9c3338-d6d2-4689-8f8f-5a54e77185aa",
+        "d1cb6f67-7281-42f4-9b58-3cb55c8a7e60"
+      ],
+      "id": "9dbadad6-1ab0-4681-8ae3-4a93fcc7c874",
+      "label": "Start_Campaign_1",
+      "parent": "200baa83-b9b0-42d3-b79a-a9b35088130f",
+      "type": "ABTSequentialBehavior",
+      "probability": 0.26666668,
+      "x": 0,
+      "y": 0,
+      "z": 9,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "1ca4a7fd-ab11-4c7d-8fe1-132e56ebbce2",
+        "9dbadad6-1ab0-4681-8ae3-4a93fcc7c874"
+      ],
+      "id": "200baa83-b9b0-42d3-b79a-a9b35088130f",
+      "label": "Start_Campaign",
+      "parent": "d51cdaba-e445-4446-942a-7cc8e2e877a3",
+      "type": "ABTGoal",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 10,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "afdfffe4-3647-46be-8a3d-9e8e6fe14119",
+        "200baa83-b9b0-42d3-b79a-a9b35088130f"
+      ],
+      "id": "d51cdaba-e445-4446-942a-7cc8e2e877a3",
+      "label": "Run_Campaign_1",
+      "parent": "8eb72361-70de-4770-ad44-f8ade26e1b28",
+      "type": "ABTSequentialBehavior",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 11,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "d51cdaba-e445-4446-942a-7cc8e2e877a3"
+      ],
+      "id": "8eb72361-70de-4770-ad44-f8ade26e1b28",
+      "label": "Run_Campaign",
+      "parent": "a2fd8a85-8020-4f59-b415-cfc92a156ab2",
+      "type": "ABTGoal",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 12,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "2c364e03-512d-46e1-a76d-75a10180877d",
+        "8eb72361-70de-4770-ad44-f8ade26e1b28"
+      ],
+      "id": "a2fd8a85-8020-4f59-b415-cfc92a156ab2",
+      "label": "Run_All_Campaigns_1",
+      "parent": "194511b8-5c41-4148-92a5-48d154662693",
+      "type": "ABTSequentialBehavior",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 13,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "a2fd8a85-8020-4f59-b415-cfc92a156ab2"
+      ],
+      "id": "194511b8-5c41-4148-92a5-48d154662693",
+      "label": "Run_All_Campaigns",
+      "parent": "cdc7caac-95e3-4b3a-988b-9fd64651d0d5",
+      "type": "ABTGoal",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 14,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "194511b8-5c41-4148-92a5-48d154662693"
+      ],
+      "id": "cdc7caac-95e3-4b3a-988b-9fd64651d0d5",
+      "label": "Top_1",
+      "parent": "865bb5ee-7656-4239-8f2e-8d6dc790983c",
+      "type": "ABTSequentialBehavior",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 15,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "cdc7caac-95e3-4b3a-988b-9fd64651d0d5"
+      ],
+      "id": "865bb5ee-7656-4239-8f2e-8d6dc790983c",
+      "label": "Top",
+      "parent": "204fcd23-cf3d-450c-a84b-801e060fbd56",
+      "type": "ABTGoal",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 16,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "865bb5ee-7656-4239-8f2e-8d6dc790983c"
+      ],
+      "id": "204fcd23-cf3d-450c-a84b-801e060fbd56",
+      "label": "cade_multirun_campaigns_02_1",
+      "parent": "457df02c-d0e2-4f11-80ff-a93256e5fad5",
+      "type": "ABTCollectionBehavior",
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 17,
+      "opacity": 1,
+      "isSelected": false
+    },
+    {
+      "actor": "example_actor",
+      "children": [
+        "204fcd23-cf3d-450c-a84b-801e060fbd56"
+      ],
+      "id": "457df02c-d0e2-4f11-80ff-a93256e5fad5",
+      "label": "cade_multirun_campaigns_0",
+      "parent": "",
+      "type": null,
+      "probability": 1,
+      "x": 0,
+      "y": 0,
+      "z": 18,
+      "opacity": 1,
+      "isSelected": false
+    }
+  ]
+}

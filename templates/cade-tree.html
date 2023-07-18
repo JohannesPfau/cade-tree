@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.25.0/cytoscape.min.js"></script>
+        <style>
+            #cy {
+              width: 1920px;
+              height: 900px;
+              display: block;
+            }
+            .slidecontainer {
+              width: 100%;
+                display: inline-block;
+            }
+            .slider {
+              -webkit-appearance: none;
+              width: 100%;
+              height: 25px;
+              background: #d3d3d3;
+              outline: none;
+              opacity: 0.7;
+              -webkit-transition: .2s;
+              transition: opacity .2s;
+            }
+
+            .slider:hover {
+              opacity: 1;
+            }
+
+            .slider::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 25px;
+              height: 25px;
+              background: #04AA6D;
+              cursor: pointer;
+            }
+
+            .slider::-moz-range-thumb {
+              width: 25px;
+              height: 25px;
+              background: #04AA6D;
+              cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slidecontainer">
+            <center>
+                <h1>CADE Tree Explorer</h1>
+            <font size="1"> {{ filePath }}</font> <br>
+                <table>
+                    <tr>
+                        <td>Depth:</td>
+                        <td width="1000"><input type="range" min="1" max="100" value="1" class="slider" id="slider_depth" onchange="expandAll();"></td>
+                    </tr>
+                    <tr>
+                        <td>Probability:</td>
+                        <td><input type="range" min="1" max="100" value="100" class="slider" id="slider_probability"></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+
+        <div id="cy"></div>
+    </body>
+    <script>
+        var cy = cytoscape({
+          container: document.getElementById('cy'),
+
+          boxSelectionEnabled: false,
+          autounselectify: true,
+
+          style: cytoscape.stylesheet()
+            .selector('node')
+              .style({
+                'content': 'data(id)',
+                'label': 'data(label)',
+                  'shape': 'rectangle',
+                  'text-valign': 'center',
+                  'width': 150,
+                  'height': 100,
+                  'background-color': 'lightblue',
+                  'opacity': 'data(probability)',
+                  'text-wrap': "wrap",
+              })
+            .selector('edge')
+              .style({
+                'curve-style': 'bezier',
+                'target-arrow-shape': 'triangle',
+                'width': 4,
+                'line-color': '#ddd',
+                'target-arrow-color': '#ddd'
+              })
+            .selector('.highlighted')
+              .style({
+                'background-color': '#61bffc',
+                'line-color': '#61bffc',
+                'target-arrow-color': '#61bffc',
+                'transition-property': 'background-color, line-color, target-arrow-color',
+                'transition-duration': '0.5s'
+              }),
+
+          elements: {
+              nodes: [
+                {% for node in data["nodes"] %}
+                    {
+                    {% if not node["type"] %}
+                        {% set label = "Root" %}
+                    {% else %}
+                        {% set label = node["type"] + "\\n" + node["label"] + "\\n" + (100*node["probability"])|int|string + "%" %}
+                    {% endif %}
+                      data: { id: '{{ node["id"] }}', label: '{{ label }}', probability: {{ node["probability"] }} }
+                    },
+                {% endfor %}
+              ],
+
+              edges: [
+                {% for node in data["nodes"] %}
+                    {% if node["parent"]|length > 0 %}
+                    {
+                      data: { id: '{{ node["id"] }}_{{ node["parent"] }}', weight: 1, source: '{{ node["parent"] }}', target: '{{ node["id"] }}' }
+                    },
+                    {% endif %}
+                {% endfor %}
+              ]
+            },
+
+          layout: {
+            name: 'breadthfirst',
+            directed: true,
+            roots: '#457df02c-d0e2-4f11-80ff-a93256e5fad5',
+            padding: 10
+          }
+        });
+
+        var fullNodesLength = {{ data["nodes"]|length }};
+
+        // on Click: expand/hide
+        cy.on('tap', 'node', function() {
+            if (this.scratch().restData == null) {
+               // Save node data and remove
+               this.scratch({
+                    restData: this.successors().targets().remove()
+               });
+            } else {
+               // Restore the removed nodes from saved data
+               this.scratch().restData.restore();
+               this.scratch({
+                    restData: null
+               });
+            }
+        });
+
+        // parent/leaf nodes different color
+        for(const [edgeID, edge] of Object.entries(cy.edges()))
+        {
+            try {
+                edge.source().style('background-color', 'lightgreen');
+            } catch (e) {}
+        }
+
+        // start from minimal tree
+        for(const [nodeID, node] of Object.entries(cy.nodes()))
+        {
+            try {
+                node.scratch({
+                    restData: node.successors().targets().remove()
+               });
+            } catch (e) {}
+        }
+
+        function expandAll()
+        {
+            while(cy.nodes().length < fullNodesLength)
+            {
+                console.log(cy.nodes().length)
+                for(const [nodeID, node] of Object.entries(cy.nodes()))
+                {
+                    try {
+                       node.scratch().restData.restore();
+                       node.scratch({
+                            restData: null
+                       });
+                    } catch (e) {}
+                }
+            }
+        }
+
+    </script>
+</html>
